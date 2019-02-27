@@ -1,3 +1,8 @@
 body {
-    background: deepskyblue;
+    background: lightgray;
+}
+
+.random-btn {
+    margin: 20px;
+    font-size: 32px;
 }
