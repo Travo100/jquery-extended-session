@@ -31,8 +31,8 @@ var game = {
     }
 };
 
+// starts the game
 game.start();
-
 
 $(document).on("click", ".random-btn", function(){
     var btnValue = parseInt($(this).val());
@@ -42,9 +42,13 @@ $(document).on("click", ".random-btn", function(){
     if(game.totalNumber === game.randomNumber) {
         // we win 
         alert("You win!");
+
+        // resets the game
         game.reset();
     } else if (game.totalNumber > game.randomNumber) {
         alert("You lose!");
+
+        // resets the game
         game.reset();
     }
 });
